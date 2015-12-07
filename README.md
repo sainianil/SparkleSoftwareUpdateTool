@@ -27,6 +27,7 @@ Fill in the version details if you really want to provide. Its optional field.
 
 ## How to use Test Web Server:
 If you want to test auto-upgrade on local network. 
+
 1. Click on 'Start Web Server' button.
 2. It'll deploy the app on `/Users/<user name>/Library/Caches/Saini.com.SparkleSoftwareUpdateTool` folder
 3. Change URL of `SUFeedURL` entry in your app which you want to upgrade to [http://127.0.0.1:1337/Appcast.xml](http://127.0.0.1:1337/Appcast.xml). If application is running on some other system in the same local network, change IP Address - 127.0.0.1  to your system's IP Address where this tool is running.
