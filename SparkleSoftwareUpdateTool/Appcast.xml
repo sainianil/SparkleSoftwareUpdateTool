@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle"  xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title> Your Application Name Update Changelog</title>
+    <link>Your web site</link>
+    <description>Most recent changes with links to updates.</description>
+    <language>en</language>
+      <item>
+        <title>Version $UPDATE_VERSION</title>
+        <sparkle:releaseNotesLink>Your release notes URL</sparkle:releaseNotesLink>
+        <description>
+          <![CDATA[
+            <ul>
+              <li>$VERSION_DETAIL</li>
+            </ul>
+          ]]>
+        </description>
+        <pubDate>$PUBLISH_DATE</pubDate>
+        <enclosure url="$SERVER_URL/$ZIP_NAME" sparkle:version="$UPDATE_VERSION" length="$INSERT_ARCHIVE_LENGTH" type="application/octet-stream" sparkle:dsaSignature="$INSERT_DSA_SIGNATURE" />
+      </item>
+  </channel>
+</rss>

@@ -1,0 +1,423 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0417CF771C1568BF00755430 /* Appcast.xml in Resources */ = {isa = PBXBuildFile; fileRef = 0417CF751C1568BF00755430 /* Appcast.xml */; };
+		0417CF781C1568BF00755430 /* sign_update in Resources */ = {isa = PBXBuildFile; fileRef = 0417CF761C1568BF00755430 /* sign_update */; };
+		044C77581C14804800412C81 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044C77571C14804800412C81 /* AppDelegate.swift */; };
+		044C775A1C14804800412C81 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044C77591C14804800412C81 /* ViewController.swift */; };
+		044C775C1C14804800412C81 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 044C775B1C14804800412C81 /* Assets.xcassets */; };
+		044C775F1C14804800412C81 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 044C775D1C14804800412C81 /* Main.storyboard */; };
+		044C776A1C14804800412C81 /* SparkleSoftwareUpdateToolTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044C77691C14804800412C81 /* SparkleSoftwareUpdateToolTests.swift */; };
+		044C77781C1480CB00412C81 /* SUTestWebServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 044C77771C1480CB00412C81 /* SUTestWebServer.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		044C77661C14804800412C81 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 044C774C1C14804800412C81 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 044C77531C14804800412C81;
+			remoteInfo = SparkleSoftwareUpdateTool;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0417CF751C1568BF00755430 /* Appcast.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Appcast.xml; sourceTree = "<group>"; };
+		0417CF761C1568BF00755430 /* sign_update */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = sign_update; sourceTree = "<group>"; };
+		044C77541C14804800412C81 /* SparkleSoftwareUpdateTool.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SparkleSoftwareUpdateTool.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		044C77571C14804800412C81 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		044C77591C14804800412C81 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		044C775B1C14804800412C81 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		044C775E1C14804800412C81 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		044C77601C14804800412C81 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		044C77651C14804800412C81 /* SparkleSoftwareUpdateToolTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SparkleSoftwareUpdateToolTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		044C77691C14804800412C81 /* SparkleSoftwareUpdateToolTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SparkleSoftwareUpdateToolTests.swift; sourceTree = "<group>"; };
+		044C776B1C14804800412C81 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		044C77751C1480CB00412C81 /* SparkleSoftwareUpdateTool-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SparkleSoftwareUpdateTool-Bridging-Header.h"; sourceTree = "<group>"; };
+		044C77761C1480CB00412C81 /* SUTestWebServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SUTestWebServer.h; sourceTree = "<group>"; };
+		044C77771C1480CB00412C81 /* SUTestWebServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SUTestWebServer.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		044C77511C14804800412C81 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		044C77621C14804800412C81 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		044C774B1C14804800412C81 = {
+			isa = PBXGroup;
+			children = (
+				044C77561C14804800412C81 /* SparkleSoftwareUpdateTool */,
+				044C77681C14804800412C81 /* SparkleSoftwareUpdateToolTests */,
+				044C77551C14804800412C81 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		044C77551C14804800412C81 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				044C77541C14804800412C81 /* SparkleSoftwareUpdateTool.app */,
+				044C77651C14804800412C81 /* SparkleSoftwareUpdateToolTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		044C77561C14804800412C81 /* SparkleSoftwareUpdateTool */ = {
+			isa = PBXGroup;
+			children = (
+				044C77741C1480BD00412C81 /* WebServer */,
+				044C77571C14804800412C81 /* AppDelegate.swift */,
+				044C77591C14804800412C81 /* ViewController.swift */,
+				044C775B1C14804800412C81 /* Assets.xcassets */,
+				044C775D1C14804800412C81 /* Main.storyboard */,
+				044C77601C14804800412C81 /* Info.plist */,
+				0417CF751C1568BF00755430 /* Appcast.xml */,
+				0417CF761C1568BF00755430 /* sign_update */,
+			);
+			path = SparkleSoftwareUpdateTool;
+			sourceTree = "<group>";
+		};
+		044C77681C14804800412C81 /* SparkleSoftwareUpdateToolTests */ = {
+			isa = PBXGroup;
+			children = (
+				044C77691C14804800412C81 /* SparkleSoftwareUpdateToolTests.swift */,
+				044C776B1C14804800412C81 /* Info.plist */,
+			);
+			path = SparkleSoftwareUpdateToolTests;
+			sourceTree = "<group>";
+		};
+		044C77741C1480BD00412C81 /* WebServer */ = {
+			isa = PBXGroup;
+			children = (
+				044C77761C1480CB00412C81 /* SUTestWebServer.h */,
+				044C77771C1480CB00412C81 /* SUTestWebServer.m */,
+				044C77751C1480CB00412C81 /* SparkleSoftwareUpdateTool-Bridging-Header.h */,
+			);
+			name = WebServer;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		044C77531C14804800412C81 /* SparkleSoftwareUpdateTool */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 044C776E1C14804800412C81 /* Build configuration list for PBXNativeTarget "SparkleSoftwareUpdateTool" */;
+			buildPhases = (
+				044C77501C14804800412C81 /* Sources */,
+				044C77511C14804800412C81 /* Frameworks */,
+				044C77521C14804800412C81 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SparkleSoftwareUpdateTool;
+			productName = SparkleSoftwareUpdateTool;
+			productReference = 044C77541C14804800412C81 /* SparkleSoftwareUpdateTool.app */;
+			productType = "com.apple.product-type.application";
+		};
+		044C77641C14804800412C81 /* SparkleSoftwareUpdateToolTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 044C77711C14804800412C81 /* Build configuration list for PBXNativeTarget "SparkleSoftwareUpdateToolTests" */;
+			buildPhases = (
+				044C77611C14804800412C81 /* Sources */,
+				044C77621C14804800412C81 /* Frameworks */,
+				044C77631C14804800412C81 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				044C77671C14804800412C81 /* PBXTargetDependency */,
+			);
+			name = SparkleSoftwareUpdateToolTests;
+			productName = SparkleSoftwareUpdateToolTests;
+			productReference = 044C77651C14804800412C81 /* SparkleSoftwareUpdateToolTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		044C774C1C14804800412C81 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0710;
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = "Anil Saini";
+				TargetAttributes = {
+					044C77531C14804800412C81 = {
+						CreatedOnToolsVersion = 7.1;
+					};
+					044C77641C14804800412C81 = {
+						CreatedOnToolsVersion = 7.1;
+						TestTargetID = 044C77531C14804800412C81;
+					};
+				};
+			};
+			buildConfigurationList = 044C774F1C14804800412C81 /* Build configuration list for PBXProject "SparkleSoftwareUpdateTool" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 044C774B1C14804800412C81;
+			productRefGroup = 044C77551C14804800412C81 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				044C77531C14804800412C81 /* SparkleSoftwareUpdateTool */,
+				044C77641C14804800412C81 /* SparkleSoftwareUpdateToolTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		044C77521C14804800412C81 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				044C775C1C14804800412C81 /* Assets.xcassets in Resources */,
+				0417CF771C1568BF00755430 /* Appcast.xml in Resources */,
+				0417CF781C1568BF00755430 /* sign_update in Resources */,
+				044C775F1C14804800412C81 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		044C77631C14804800412C81 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		044C77501C14804800412C81 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				044C775A1C14804800412C81 /* ViewController.swift in Sources */,
+				044C77781C1480CB00412C81 /* SUTestWebServer.m in Sources */,
+				044C77581C14804800412C81 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		044C77611C14804800412C81 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				044C776A1C14804800412C81 /* SparkleSoftwareUpdateToolTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		044C77671C14804800412C81 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 044C77531C14804800412C81 /* SparkleSoftwareUpdateTool */;
+			targetProxy = 044C77661C14804800412C81 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		044C775D1C14804800412C81 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				044C775E1C14804800412C81 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		044C776C1C14804800412C81 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		044C776D1C14804800412C81 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		044C776F1C14804800412C81 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = SparkleSoftwareUpdateTool/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Saini.com.SparkleSoftwareUpdateTool;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SparkleSoftwareUpdateTool/SparkleSoftwareUpdateTool-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		044C77701C14804800412C81 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = SparkleSoftwareUpdateTool/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Saini.com.SparkleSoftwareUpdateTool;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SparkleSoftwareUpdateTool/SparkleSoftwareUpdateTool-Bridging-Header.h";
+			};
+			name = Release;
+		};
+		044C77721C14804800412C81 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = SparkleSoftwareUpdateToolTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Saini.com.SparkleSoftwareUpdateToolTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SparkleSoftwareUpdateTool.app/Contents/MacOS/SparkleSoftwareUpdateTool";
+			};
+			name = Debug;
+		};
+		044C77731C14804800412C81 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = SparkleSoftwareUpdateToolTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Saini.com.SparkleSoftwareUpdateToolTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SparkleSoftwareUpdateTool.app/Contents/MacOS/SparkleSoftwareUpdateTool";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		044C774F1C14804800412C81 /* Build configuration list for PBXProject "SparkleSoftwareUpdateTool" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				044C776C1C14804800412C81 /* Debug */,
+				044C776D1C14804800412C81 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		044C776E1C14804800412C81 /* Build configuration list for PBXNativeTarget "SparkleSoftwareUpdateTool" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				044C776F1C14804800412C81 /* Debug */,
+				044C77701C14804800412C81 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		044C77711C14804800412C81 /* Build configuration list for PBXNativeTarget "SparkleSoftwareUpdateToolTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				044C77721C14804800412C81 /* Debug */,
+				044C77731C14804800412C81 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 044C774C1C14804800412C81 /* Project object */;
+}
