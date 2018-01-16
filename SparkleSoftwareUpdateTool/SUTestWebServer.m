@@ -132,12 +132,14 @@
 }
 
 - (void)queueWrite:(NSData*)data {
-    assert(self.dataToWrite == nil);
-    assert(data != nil);
-    assert(data.length > 0);
-    self.dataToWrite = data;
-    self.numBytesToWrite = (NSInteger)data.length;
-    [self checkIfCanWriteNow];
+    if (self.dataToWrite != nil) {
+        assert(self.dataToWrite == nil);
+        assert(data != nil);
+        assert(data.length > 0);
+        self.dataToWrite = data;
+        self.numBytesToWrite = (NSInteger)data.length;
+        [self checkIfCanWriteNow];
+    }
 }
 
 - (void)checkIfCanWriteNow {
