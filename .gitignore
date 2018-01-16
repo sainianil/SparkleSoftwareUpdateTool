@@ -6,6 +6,8 @@ build/
 
 xcuserdata
 
+*.pem
+
 *.pbxuser
 *.perspective
 *.perspectivev3
