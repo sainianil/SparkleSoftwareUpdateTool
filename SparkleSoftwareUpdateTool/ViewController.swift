@@ -119,7 +119,7 @@ class ViewController: NSViewController {
             
             //copy app to server directory
             if (try? fileManager.copyItem(at: bundleURL, to: destinationBundleURL)) != nil {
-                // .copyItemAtURL(bundleURL, toURL: destinationBundleURL)) != nil {
+                
                 //append path to info.plist
                 let infoURL = destinationBundleURL.appendingPathComponent("Contents").appendingPathComponent("Info.plist")
                 
@@ -214,31 +214,13 @@ class ViewController: NSViewController {
                 
                 if let appcastContents = try? NSMutableString(contentsOf: appcastDestinationURL, encoding: utf8Val) {
                     
-                    let appContentsRange = NSRange(0..<appcastContents.length)//NSMakeRange(0, appcastContents.length)
+                    let appContentsRange = NSRange(0..<appcastContents.length)
                     var warningMessage: String = ""
                     
-                    
-                    
-                    /*
-                     MARK: Not too sure about this one...
-                     */
                     var archFileAttrSize : UInt64!
                     if let attrSize = archiveFileAttributes[FileAttributeKey.size] as? NSNumber {
                         archFileAttrSize = attrSize.uint64Value
                     }
-                /*
-                    do {
-                        var archFileAttrSize = (try archiveURL.resourceValues(forKeys: [.fileSizeKey]) as [URLResourceKey]).fileSize!
-                    } catch {
-                        print("Error: \(error)")
-                    }
-                     */
-                    //var archFileAttrSize = (try? fileManager.attributesOfItem(atPath: archiveURL.path!)[FileAttributeKey.size] as! NSNumber)?.uint64Value
-                    /*
-                     *
-                     */
-                    
-                    
                     
                     let numberOfUpdateVersionReplacements = appcastContents.replaceOccurrences(
                         of: "$UPDATE_VERSION",
@@ -250,51 +232,42 @@ class ViewController: NSViewController {
                     if numberOfUpdateVersionReplacements != 2 {
                         warningMessage = "$UPDATE_VERSION\n"
                     }
-                
                     
+                    let numberOfLengthReplacements = appcastContents.replaceOccurrences(of: "$INSERT_ARCHIVE_LENGTH", with: String(format: "%llu", archFileAttrSize), options: .literal, range: appContentsRange)
                     
+                    warningMessage += numberOfLengthReplacements == 1 ? "" : "$INSERT_ARCHIVE_LENGTH\n"
                     
-                    
-                    let numberOfLengthReplacements = appcastContents.replaceOccurrences(of: "$INSERT_ARCHIVE_LENGTH", with: String(format: "%llu",
-                                                                                                                                   archFileAttrSize /*archiveFileAttributes. */
-                        /*archiveFileAttributes[FileAttributeKey.size] as! UInt64 */
-                        /* .fileSize() */), options: .literal, range: appContentsRange)
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                        warningMessage += numberOfLengthReplacements == 1 ? "" : "$INSERT_ARCHIVE_LENGTH\n"
-                    let numberOfSignatureReplacements = appcastContents.replaceOccurrences(of: "$INSERT_DSA_SIGNATURE", with: signature, options: .literal, range: appContentsRange)  // .replaceOccurrencesOfString("$INSERT_DSA_SIGNATURE", withString:signature, options:NSStringCompareOptions.LiteralSearch, range: NSMakeRange(0, (appcastContents.length)))
+                    let numberOfSignatureReplacements = appcastContents.replaceOccurrences(of: "$INSERT_DSA_SIGNATURE", with: signature, options: .literal, range: appContentsRange)
                     if numberOfSignatureReplacements != 1 {
                         warningMessage += "$INSERT_DSA_SIGNATURE\n"
                     }
                     
-                    let numberOfPublishDateReplacements = appcastContents.replaceOccurrences(of: "$PUBLISH_DATE", with: self.currentDate(), options: .literal, range: appContentsRange)// .replaceOccurrencesOfString("$PUBLISH_DATE", withString: self.currentDate(), options:NSStringCompareOptions.LiteralSearch, range: NSMakeRange(0, (appcastContents.length)))
+                    let numberOfPublishDateReplacements = appcastContents.replaceOccurrences(of: "$PUBLISH_DATE", with: self.currentDate(), options: .literal, range: appContentsRange)
                     if numberOfPublishDateReplacements != 1 {
                         warningMessage += "$PUBLISH_DATE\n"
                     }
                     
-                    var serverURL = self.txtServerURL.stringValue
-                    if serverURL.hasSuffix("/") {
-                        // Please use String slicing subscript with a 'partial range upto' operator.
-                        serverURL = String(serverURL[..<serverURL.endIndex])
-                    }
+                    let txtServerURLStr = self.txtServerURL.stringValue
+                    let serverURL = txtServerURLStr.hasSuffix("/") ? String(txtServerURLStr[..<txtServerURLStr.endIndex]) : self.txtServerURL.stringValue
                     
                     let numberOfServerURLReplacements = appcastContents.replaceOccurrences(of: "$SERVER_URL", with: serverURL, options: .literal, range: appContentsRange)
                     if numberOfServerURLReplacements != 1 {
                         warningMessage += "$SERVER_URL\n"
                     }
                     
-                    let numberOfZipNameReplacements = appcastContents.replaceOccurrences(of: "$ZIP_NAME", with: zipName, options: .literal, range: appContentsRange)// NSMakeRange(0, appcastContents.length))
+                    let numberOfZipNameReplacements = appcastContents.replaceOccurrences(
+                        of: "$ZIP_NAME",
+                        with: zipName,
+                        options: .literal,
+                        range: appContentsRange
+                    )
+                    
                     if numberOfZipNameReplacements != 1 {
                         warningMessage += "$ZIP_NAME\n"
                     }
                     
                     let numberOfVersionDetailsReplacements = appcastContents.replaceOccurrences(of: "$VERSION_DETAILS", with: self.txtVersionDetails.string, options: .literal, range: appContentsRange)
+                    
                     if numberOfVersionDetailsReplacements != 1 {
                         warningMessage += "$VERSION_DETAILS\n"
                     }
@@ -328,7 +301,6 @@ class ViewController: NSViewController {
         openPanel.canChooseDirectories = false
         openPanel.canCreateDirectories = false
         openPanel.canChooseFiles = true
-        
         return openPanel
     }
     
